@@ -34,14 +34,14 @@ cd SolveRR
 # Install project dependencies using yarn
 yarn install
 ```
-
 ## Contributing
 
 Contributions to SolveRR are welcome! If you would like to contribute to the project, follow these steps:
 
 1. Fork the project by clicking the 'Fork' button on the top right of the repository page.
 2. Clone the forked repository to your local machine:
-
-   ```bash
-   git clone <forked-repository-url>
-```
+3. Create a new branch for your feature or bug fix:
+4. Make your changes and commit them with descriptive commit messages:
+5. Push your changes to your forked repository:
+6. Create a pull request by navigating to the original repository and clicking on the 'New Pull Request' button. Describe your changes and submit the pull request.
+7. Your contribution will be reviewed, and once approved, it will be merged into the main codebase.
