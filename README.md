@@ -8,12 +8,8 @@ SolveRR is a freelancing website that connects clients with talented freelancers
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Available Scripts](#available-scripts)
-- [Usage](#usage)
-- [Deployment](#deployment)
 - [Built With](#built-with)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Prerequisites
 
