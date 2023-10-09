@@ -58,3 +58,18 @@ git push origin feature-name
 ```
 6. Create a pull request by navigating to the original repository and clicking on the 'New Pull Request' button. Describe your changes and submit the pull request.
 7. Your contribution will be reviewed, and once approved, it will be merged into the main codebase.
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+- `yarn start`: Runs the app in development mode.
+- `yarn build`: Builds the app for production to the `build` folder.
+- `yarn test`: Launches the test runner in interactive watch mode.
+- `yarn eject`: Ejects the app from the Create React App setup.
+
+## Built With
+
+SolveRR is built using the following technologies:
+
+- **React.js**: A popular JavaScript library for building user interfaces.
