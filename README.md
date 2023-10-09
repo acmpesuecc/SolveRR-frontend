@@ -30,7 +30,7 @@ To get started with SolveRR, follow these steps:
 
 ```bash
 # Clone the SolveRR repository
-git clone <repository-url>
+git clone git@github.com:devadigapratham/SolveRR-frontend.git
 
 # Navigate to the project directory
 cd SolveRR
