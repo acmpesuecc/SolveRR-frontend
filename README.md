@@ -73,3 +73,5 @@ In the project directory, you can run the following scripts:
 SolveRR is built using the following technologies:
 
 - **React.js**: A popular JavaScript library for building user interfaces.
+
+### Prathamesh Devadiga
