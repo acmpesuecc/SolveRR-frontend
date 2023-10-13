@@ -19,8 +19,6 @@ function Navbar() {
     };
   }, []);
 
-  // const currentUser = null
-
   const currentUser = {
     id: 1,
     username: "Anna",
@@ -28,7 +26,7 @@ function Navbar() {
   };
 
   return (
-    <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
+    <div className={`navbar ${active || pathname !== "/" ? "active" : ""}`}>
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
@@ -37,38 +35,30 @@ function Navbar() {
           <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>SolveRR Business</span>
-          <span>Explore</span>
-          <span>English</span>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {/* Omitted non-essential links */}
           {currentUser ? (
-            <div className="user" onClick={()=>setOpen(!open)}>
+            <div className="user" onClick={() => setOpen(!open)}>
               <img
                 src="https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
+                loading="lazy" // Lazy-load the user image
               />
               <span>{currentUser?.username}</span>
-              {open && <div className="options">
-                {currentUser.isSeller && (
-                  <>
-                    <Link className="link" to="/mygigs">
-                      Gigs
-                    </Link>
-                    <Link className="link" to="/add">
-                      Add New Gig
-                    </Link>
-                  </>
-                )}
-                <Link className="link" to="/orders">
-                  Orders
-                </Link>
-                <Link className="link" to="/messages">
-                  Messages
-                </Link>
-                <Link className="link" to="/">
-                  Logout
-                </Link>
-              </div>}
+              {open && (
+                <div className="options">
+                  {currentUser.isSeller && (
+                    <>
+                      <Link className="link" to="/mygigs">
+                        Gigs
+                      </Link>
+                      <Link className="link" to="/add">
+                        Add New Gig
+                      </Link>
+                    </>
+                  )}
+                  {/* Omitted non-essential links */}
+                </div>
+              )}
             </div>
           ) : (
             <>
@@ -87,30 +77,7 @@ function Navbar() {
             <Link className="link menuLink" to="/">
               Graphics & Design
             </Link>
-            <Link className="link menuLink" to="/">
-              Video & Animation
-            </Link>
-            <Link className="link menuLink" to="/">
-              Writing & Translation
-            </Link>
-            <Link className="link menuLink" to="/">
-              AI Services
-            </Link>
-            <Link className="link menuLink" to="/">
-              Digital Marketing
-            </Link>
-            <Link className="link menuLink" to="/">
-              Music & Audio
-            </Link>
-            <Link className="link menuLink" to="/">
-              Programming & Tech
-            </Link>
-            <Link className="link menuLink" to="/">
-              Business
-            </Link>
-            <Link className="link menuLink" to="/">
-              Lifestyle
-            </Link>
+            {/* Omitted non-essential menu links */}
           </div>
           <hr />
         </>
