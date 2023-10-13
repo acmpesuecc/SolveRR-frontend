@@ -22,7 +22,7 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Solverr > Graphics & Design ></span>
+        <span className="breadcrumbs">Solverr &gt; Graphics & Design &gt;</span>
         <h1>AI Artists</h1>
         <p>
           Explore the boundaries of art and technology with Solverr's AI artists
