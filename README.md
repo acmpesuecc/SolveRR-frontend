@@ -63,10 +63,9 @@ git push origin feature-name
 
 In the project directory, you can run the following scripts:
 
-- `yarn start`: Runs the app in development mode.
-- `yarn build`: Builds the app for production to the `build` folder.
-- `yarn test`: Launches the test runner in interactive watch mode.
-- `yarn eject`: Ejects the app from the Create React App setup.
+- `yarn dev`: Runs the app in development mode.
+- `yarn build`: Builds the app for production to the `./dist` folder.
+- `yarn preview`: Starts a local web server built from `./dist` for preview
 
 ## Built With
 
